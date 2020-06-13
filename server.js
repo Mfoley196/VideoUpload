@@ -27,7 +27,7 @@ app.get('/',function(req,res){
 
 //ROUTES WILL GO HERE
 app.get('/successPage',function(req,res){
-  res.sendFile(__dirname + '/success.html');
+  res.sendFile(__dirname + '/speechvideos/success.html');
  
 });
 
