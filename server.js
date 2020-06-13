@@ -27,7 +27,7 @@ app.get('/',function(req,res){
 
 //ROUTES WILL GO HERE
 app.get('/successPage',function(req,res){
-  res.sendFile(__dirname + '/speechvideos/success.html');
+  res.sendFile(__dirname + '/success.html');
  
 });
 
@@ -38,7 +38,7 @@ app.post('/uploadfile', upload.single('myFile'), (req, res, next) => {
     error.httpStatusCode = 400
     return next(error)
   }
-  res.redirect("/successPage")
+  res.redirect("//speechvideos/successPage")
   
 })
  
