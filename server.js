@@ -38,7 +38,7 @@ app.post('/uploadfile', upload.single('myFile'), (req, res, next) => {
     error.httpStatusCode = 400
     return next(error)
   }
-  res.redirect("//speechvideos/successPage")
+  res.redirect("/speechvideos/successPage")
   
 })
  
